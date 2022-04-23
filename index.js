@@ -1,5 +1,3 @@
-// CARRITO DE COMPRAS
-
 class Articulo{
     constructor(nombre, precio, categoria, codigo, cantidad){
         this.nombre = nombre;
@@ -12,7 +10,7 @@ class Articulo{
         return this.precio * 1.21;
     }
   }
-  
+    
   let baseDatosArticulos = [];
   
   baseDatosArticulos.push(new Articulo("Smart TV Hitachi 50''", 79907, "Audio/Video", "A001", 3));
@@ -41,6 +39,7 @@ class Articulo{
   const DOMcarrito = document.getElementById("carrito");
   const DOMtotal = document.getElementById("total");
   const DOMbotonVaciar = document.getElementById("boton-vaciar");
+  
   
   // Visualizar todos los productos 
   function renderizarProductos(){
@@ -86,6 +85,7 @@ class Articulo{
   function enviarProductoAlCarrito(evento){
     carrito.push(evento.target.getAttribute("ID"));
     renderizarCarrito();
+    carritoLocalStorage();
   }
   
   function renderizarCarrito(){
@@ -128,6 +128,10 @@ class Articulo{
       itemCarrito.appendChild(miBoton);
       DOMcarrito.appendChild(itemCarrito);
     });
+    //Mostrar precio total
+    
+    DOMtotal.textContent = Intl.NumberFormat(`de-DE`).format(totalCarrito());
+    // DOMtotal.textContent = totalCarrito();
   
   }
   
@@ -141,18 +145,44 @@ class Articulo{
     });
     // Vuelve a renderizar
     renderizarCarrito();
+    //Actualizar LocalStorage
+    carritoLocalStorage();
+  }
+  
+  // Calcular el precio total de los productos en carrito
+  function totalCarrito(){
+    return carrito.reduce((total, item)=> {
+      const miItem = baseDatosArticulos.filter((itemBaseDatos)=>{
+        return itemBaseDatos.codigo === item;
+      });
+      return total + miItem[0].precio;
+    }, 0);
   }
   
   // Vaciar Carrito
   function vaciarCarrito(){
     carrito = [];
     renderizarCarrito();
+    localStorage.clear();
+  }
+  
+  //Guardar en localStorage
+  function carritoLocalStorage (){
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+  }
+  
+  //Cargar de localStorage
+  function getCarritoLocalStorage(){
+    if(localStorage.getItem("carrito") !== null){
+      //carga la información
+      carrito = JSON.parse(localStorage.getItem("carrito"));
+    }
   }
   
   // Evento vaciar carrito
   DOMbotonVaciar.addEventListener("click", vaciarCarrito);
   
   // INICIAR
+  getCarritoLocalStorage();
   renderizarProductos();
   renderizarCarrito();
-  
