@@ -1,0 +1,142 @@
+[
+    {
+        "nombre": "Smart TV Hitachi 50''",
+        "precio": 79907,
+        "categoria": "Audio/Video",
+        "codigo": "A001",
+        "cantidad": 3
+    },
+    {
+        "nombre": "Heladera Samsung Rt38k59",
+        "precio":  200784,
+        "categoria": "Electrodomésticos y AC",
+        "codigo": "E001",
+        "cantidad": 5
+    },
+    {
+        "nombre": "Notebook ASUS X515JA",
+        "precio": 84999,
+        "categoria": "Audio/Video",
+        "codigo": "A002",
+        "cantidad": 8
+    },
+    {
+        "nombre": "Equipo de música Sony",
+        "precio": 35000,
+        "categoria": "Audio/Video",
+        "codigo": "A003",
+        "cantidad": 2
+    },
+    {
+        "nombre": "Auriculares Sony MDR-ZX110",
+        "precio": 4999,
+        "categoria": "Audio/Video",
+        "codigo": "A004",
+        "cantidad": 9
+    },
+    {
+        "nombre": "Lavarropas Samsung W65m0",
+        "precio": 92032,
+        "categoria": "Electrodomésticos y AC",
+        "codigo": "E002",
+        "cantidad": 1
+    },
+    {
+        "nombre": "Aire Acondicionado TCL",
+        "precio": 82795,
+        "categoria": "Electrodomésticos y AC",
+        "codigo": "E003",
+        "cantidad": 5
+    },
+    {
+        "nombre": "Afeitadora Philips Aquatouch",
+        "precio": 7245,
+        "categoria": "Cuidado Personal",
+        "codigo": "C001",
+        "cantidad": 6
+    },
+    {
+        "nombre": "Kit Philips Brp505/00",
+        "precio": 12063,
+        "categoria": "Cuidado Personal",
+        "codigo":"C002",
+        "cantidad": 2
+    },
+    {
+        "nombre": "Depiladora Philips Bre712/00",
+        "precio": 14125,
+        "categoria": "Cuidado Personal",
+        "codigo": "C003",
+        "cantidad": 7
+    },
+    {
+        "nombre": "Secador De Pelo Remington",
+        "precio": 6313,
+        "categoria": "Cuidado Personal",
+        "codigo": "C004",
+        "cantidad": 5
+    },
+    {
+        "nombre": "Pileta circular Sol de Verano",
+        "precio": 49403,
+        "categoria": "Hogar y Jardín",
+        "codigo": "H001",
+        "cantidad": 3
+    },
+    {
+        "nombre": "Futón 3 cuerpos",
+        "precio": 32800,
+        "categoria": "Hogar y Jardín",
+        "codigo": "H002",
+        "cantidad": 2
+    },
+    {
+        "nombre": "Cama de 1 plaza blanca",
+        "precio": 22409,
+        "categoria": "Hogar y Jardín",
+        "codigo": "H003",
+        "cantidad": 2
+    },
+    {
+        "nombre": "Escritorio de trabajo",
+        "precio": 19480,
+        "categoria": "Hogar y Jardín",
+        "codigo": "H004",
+        "cantidad": 3
+    },
+    {
+        "nombre": "Bicicleta Gribom 3060 R26",
+        "precio": 46795,
+        "categoria": "Más Categorías",
+        "codigo": "M001",
+        "cantidad": 8
+    },
+    {
+        "nombre": "Conservadora 32 L",
+        "precio": 3980,
+        "categoria": "Más Categorías",
+        "codigo": "M002",
+        "cantidad": 15
+    },
+    {
+        "nombre": "Parlante Sanyo Bth25",
+        "precio": 14452,
+        "categoria": "Audio/Video",
+        "codigo": "A005",
+        "cantidad": 23
+    },
+    {
+        "nombre": "Heladera Samsung Rt32k507",
+        "precio": 130183,
+        "categoria": "Electrodomésticos y AC",
+        "codigo": "E004",
+        "cantidad": 5
+    },
+    {
+        "nombre": "Freezer Philco 2 Puertas",
+        "precio": 115034,
+        "categoria": "Electrodomésticos y AC",
+        "codigo": "E005",
+        "cantidad": 4
+    }
+]
