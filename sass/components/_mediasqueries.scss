@@ -1,0 +1,387 @@
+/*MEDIAS QUERIES*/
+
+@include media(xl){
+    /*MEDIA QUERIES - PRODUCTOS*/
+    .sectionCards{
+        font-size: 80%;
+        .btn{
+        font-size: 95%
+        }
+    }
+    /*MEDIA QUERIES - CONTACTO*/
+    .form{
+        div{
+            a{
+                font-size: 95%;
+            }
+        }
+    }
+
+    /*MEDIA QUERIES - LOGIN*/
+    .gridLogin{
+        .form2{
+            margin: 2rem 0 2rem 11rem;
+        }
+        .form3{
+            margin: 2rem 11rem 2rem 0;
+        }
+    }
+}
+
+@include media(lg){
+
+    /*MEDIA QUERIES - PRODUCTOS*/
+    .gridProductos{
+        grid-template-areas: "header"
+                             "menuLateral"
+                             "sectionCards"
+                             "footer footer";
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 0% 100%;
+        .sectionCards{
+            margin-top:6rem;
+            width: 100%;      
+        }
+    }
+
+    /*MEDIA QUERIES - CONTACTO*/
+    .gridContacto{
+        grid-template-areas: "header"
+                             "form"
+                             "sectionContacto"
+                             "footer";
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: auto;
+        .form{
+            width: 40%;
+            height: 28rem;
+            margin: 2rem auto 2rem auto;
+        }
+    }
+
+    /*MEDIA QUERIES - LOGIN*/
+    .gridLogin{
+        font-size: 90%;
+        .form2{
+            margin: 2rem 0 2rem 7rem;
+        }
+        .form3{
+            margin: 2rem 7rem 2rem 0;
+        }
+    }
+
+    /*MEDIA QUERIES - CARRITO*/
+    .sectionCart{
+        .cart{
+            width: 90%;
+        }
+    }
+}
+
+
+
+@include media(md){
+
+    /*MEDIA QUERIES - INDEX*/
+    html{
+        font-size: 89%;
+    }
+    header{
+        h1{
+            padding-right: 8%;
+        }
+    }
+    .navbar-nav{
+        margin: 0 !important;
+        >li{
+            &:hover{
+                background-color: black !important;
+            }
+            .dropdown-menu{
+                background-color: inherit;
+                border: none;
+                a{
+                    font-size: 85%;
+                    padding: 0;
+                    text-align: center;
+                    color: whitesmoke;
+                    &:hover{
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+    .section1{
+        .section1Cartel{
+            left: 61%;
+        }
+    }
+    .section2{
+        margin-top: 4rem;
+        .gridSection2{
+            .card3,.card4,.card6{
+                display: none;
+            }
+            .card1{
+                grid-column: 1/4;
+            }
+            .card2{
+                grid-column: 4/7;
+            }
+            .card5{
+                grid-column: 1/4;
+            }
+            .card7{
+                grid-column: 4/7;
+            }
+        }
+    }
+    .section3{
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+    }
+    .section4{
+        margin: 0 0;
+    }
+
+    /*MEDIA QUERIES - PRODUCTOS*/
+    .sectionCards{
+        #containerProductos{
+            flex-direction: column;
+            align-items: center;
+            .card{
+                width: 90%;
+            }
+        }    
+    }
+
+    /*MEDIA QUERIES - NOSOTROS*/
+    .gridNosotros{
+        display: grid;
+        grid-template-areas: "header"
+                             "nosotros1"
+                             "nosotros2"
+                             "footer";
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 100%;
+        .nosotros1{
+            margin: 2rem 2rem 0 2rem;
+            border-top-right-radius: 1.25rem;
+            border-bottom-right-radius: 1.25rem;
+        }
+        .nosotros2{
+            margin: 2rem 2rem 2rem 2rem;
+            flex-direction: column;
+            border-top-left-radius: 1.25rem;
+            border-bottom-left-radius: 1.25rem;
+            .colNosotros{
+                width: 100%;
+                align-items: center;
+                .nosotrosDiv1{
+                    width: 90%;
+                    justify-content: center;
+                    img{
+                        width: 60%;
+                    }
+                    p{
+                        font-size:100% ;
+                    }
+                }
+            }
+            .borderNosotros{
+                border-radius: 0;
+                flex-direction: column-reverse;
+                padding-top: 0;
+                p{
+                    margin-top: 3rem;
+                }
+            }
+        }
+    }
+
+    /*MEDIA QUERIES - LOGIN*/
+    .gridLogin{
+        font-size: 90%;
+        .form2{
+            margin: 2rem 0 2rem 5rem;
+        }
+        .form3{
+            margin: 2rem 5rem 2rem 0;
+        }
+    }
+
+    /*MEDIA QUERIES - CARRITO*/
+    .sectionCart{
+        .cart{
+            align-items: center;
+            flex-direction: column;
+            .cartProductos{
+                width: 100%;
+                .cardCarrito{
+                    height: 6rem;
+                }
+            }
+            .cardInfodepago{
+                width: 80%;
+            }
+        }
+    }
+}  
+
+@include media(sm){
+
+    /*MEDIA QUERIES - INDEX*/
+    .section1{
+        display: none;
+    }
+    .section2{
+        .gridSection2{
+            grid-template-rows: repeat(4,fr);
+            .card1{
+                grid-row: 1/2;
+                grid-column: 1/7;  
+            }
+            .card2{
+                grid-row: 2/3;
+                grid-column: 1/7;
+            }
+            .card5{
+                grid-row: 3/4;
+                grid-column: 1/7;
+            }
+            .card7{
+                grid-row: 4/5;
+                grid-column: 1/7;
+            }
+        }
+    }
+    .section4{
+        padding: 0 5rem;
+        .bordeDerecha{
+            border: none;
+        }
+        flex-direction: column;
+        &>div{
+            border-right: 0px solid black;
+        }
+    }
+    .sectionFooter1{
+        div{
+            width: 50%;
+        }
+    }
+    .sectionFooter2{
+        flex-direction: column;
+        div{
+            justify-content: center;
+            align-items: center;
+            margin-top: 3rem;
+            padding-right: 5%;
+            p{
+                text-align: center;
+            }
+        }
+    }
+
+
+    /*MEDIA QUERIES - PRODUCTOS*/
+    .sectionCards{
+        #containerProductos{
+            padding: 0;
+            .card{
+                width: 100%;
+            }
+        }    
+    }
+
+    /*MEDIA QUERIES - NOSOTROS*/
+    .gridNosotros{
+        .nosotros1{
+            margin: 0rem;
+            border-radius: 0;
+        }
+        .nosotros2{
+            margin: 0;
+            border-radius: 0;
+        }
+    }
+
+
+   /*MEDIA QUERIES - CONTACTO*/
+   .gridContacto{
+        .form{
+            margin-top: 0;
+            border-radius: 0;
+            width: 100%;
+            &>div{
+              position: relative;
+            }
+        }
+        .sectionContacto{
+            margin: 1.4rem 0 0 0;
+            flex-direction: column;
+            justify-content: center;
+            .colContacto{
+                padding: 1rem;
+                width: 100%;
+                height: 50%;
+                align-items: center;
+                .contactoDiv1{
+                    width: 60%;
+                    img{
+                        margin-top: 1rem;
+                    }
+                    p{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    /*MEDIA QUERIES - LOGIN*/
+    .gridLogin{
+        font-size: 100%;
+        display: grid;
+        grid-template-areas: "header"     
+                             "form2"
+                             "form3"
+                             "footer";
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 100%;
+        .form2{
+            height: 100%;
+            margin: 0;
+            border-radius: 0;
+            &::after{
+                display: none;
+            }
+        }
+        .form3{
+            height: 100%;
+            margin: 0;
+            border-radius: 0;
+            .login-items{
+                margin-top: 10%;
+                gap: 0.625rem;
+            }
+        }
+    }
+
+    /*MEDIA QUERIES - CARRITO*/
+    .sectionCart{    
+        margin: 1rem 0 0 0;
+        .cart{
+           width: 100%;
+           .cartProductos{
+               .cardCarrito{
+                    height: 7rem;
+                }
+            }
+           .cardInfodepago{
+               width: 100%;
+            }
+        }
+    }
+}

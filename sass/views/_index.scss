@@ -1,0 +1,161 @@
+/* ESTILOS INDEX */
+/* Estilos section 1 - Carousel (INDEX)*/
+.section1{
+    padding: 0 1rem;
+    .section1Cartel{
+        padding-top: 3%;
+        width: 16rem;
+        height: 25rem;
+        background-color: $bg-naranja;
+        position: absolute;
+        left: 72%;
+        top: 32%;
+        p{
+            color: black;
+            font-weight: bold;
+            font-size: 180%;
+            overflow-wrap: break-word;
+            font-family: 'Montserrat', sans-serif;
+            font-style: italic;
+        }
+        p:nth-child(2){
+            color: white;
+            font-size: 160%;
+        }
+    }
+    .contenedor-img{
+        height: 34rem;
+        img{
+            object-fit: cover;
+            height: 100%;
+        }
+    }
+}
+/*Estilos section 2 Cards*/
+.section2{
+    h2{
+        font-size: 150%;
+        margin-left: 1.5rem;
+        font-weight: bold;
+    }
+    margin: 6rem 2rem;
+    .gridSection2{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(2,fr);
+        &>.card1,.card2,.card5,.card7{
+            height: 9rem;
+            margin: 0.8rem;
+            border-radius: 0.5rem;
+            padding: 0.3rem;
+            display: flex;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.16) 0rem 0.1875rem 0.375rem, rgba(0, 0, 0, 0.23) 0rem 0.1875rem 0.375rem;
+            transition: all 0.3s ease 0s;
+
+            .cardImagen{
+                width: 35%;
+                height: 100%;
+                img{
+                    object-fit: contain;
+                }
+            }
+            .cardTexto{
+                margin-left: 5%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 65%;
+                height: 100%;
+                h3{
+                    font-size: 125%;
+                    font-weight: bold;
+                }
+                p{
+                    font-size: 100%;
+                }
+            }
+        }
+        &>.card3,.card4,.card6{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                object-fit: contain;
+            }
+        }
+        .card1{
+            grid-row: 1/2;
+            grid-column: 1/4;
+        }
+        .card2{
+            grid-row: 1/2;
+            grid-column: 4/6;
+        }
+        .card3{
+            grid-row: 1/2;
+            grid-column: 6/7;
+        }
+        .card4{
+            grid-row: 2/3;
+            grid-column: 1/2;
+
+        }
+        .card5{
+            grid-row: 2/3;
+            grid-column: 2/4;
+        }
+        .card6{
+            grid-row: 2/3;
+            grid-column: 4/5;
+        }
+        .card7{
+            grid-row: 2/3;
+            grid-column: 5/7;
+        }
+    }
+}
+
+/* Estilos section 3 Marcas */
+.section3{
+    padding: 3rem 1rem;
+    display: flex;
+    align-items: center;
+    margin: 8rem 2rem;
+    div{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Estilos section 4 - Íconos pago, envío y compra*/
+.section4{
+    padding-bottom: 5rem;
+    .bordeDerecha{
+        border-right: 0.5px solid rgba(128, 128, 128, 0.247);
+    }
+    margin: 0rem 3rem;
+    display: flex;
+    justify-content: center;
+    &>div{
+        width: 100%;
+        padding: 0 1.8%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h4{
+            font-weight: bold;
+            font-size: 110%;
+        }
+        p{
+            font-size: 100%;
+        }
+        div{
+            display: flex;
+            justify-content: center;
+        }
+        p{
+            text-align: center;
+        }
+    }
+}

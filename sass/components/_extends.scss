@@ -1,0 +1,58 @@
+// Extend para botones
+%botones{
+    padding:0.5rem 0.75rem;
+    margin:0.5rem 0 1;
+    border:0.125rem solid #78788c;
+    background:0;
+    color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s;
+    &:hover{
+        background: black;
+        color:#fff;
+    }
+}
+
+// Extend para formularios
+%propiedades-formularios{
+    background:#e6e6e6;
+    padding: 1.6rem 1.6rem;
+    position: relative;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    h2{
+        font-weight: bold;
+        font-size: 130%;
+        margin:0.625rem 1 0;
+        padding-bottom:0.625rem;
+        width:100%;
+        color:#78788c;
+        border-bottom:0.1875rem solid #78788c;
+    }
+    input{
+        width:100%;
+        padding:0.625rem;
+        box-sizing:border-box;
+        background:none;
+        outline:none;
+        resize:none;
+        border:0;
+        font-size: 0.875;
+        transition:all .3s;
+        border-bottom:0.125rem solid #bebed2;
+        &:focus{
+            border-bottom:0.125rem solid #78788c;
+        }
+    }
+    p{
+        &:before{
+            content:attr(type);
+            display:block;
+            margin:1.75rem 0 0;
+            font-size:0.875rem;
+            color:#5a5a5a;
+        }
+    }
+    button{
+        @extend %botones;
+    }
+}

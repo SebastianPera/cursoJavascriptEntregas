@@ -1,0 +1,167 @@
+/* ESTILOS CONTACTO*/
+.gridContacto{
+    display: grid;
+    grid-template-areas: "header header"
+                         "form sectionContacto"
+                         "footer footer";
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 35% 65%;
+
+    /*Estilos formulario de contacto*/
+    .form{
+        @extend %propiedades-formularios;
+    }
+    .form{
+        margin: 2rem 0 auto 3rem;
+        grid-area: form;
+        width:80%;
+        height:85%;
+        border-radius:0.5rem;
+        div{
+            position:absolute;
+            bottom:-2rem;
+            right:-1.25rem;
+            background: black;
+            color:#fff;
+            width:90%;
+            height: 4.5em;
+            padding:1rem 0.25rem 1rem 0;
+            border-radius:0.375rem;
+            font-size:0.8125rem;
+            box-shadow:0.625rem 0.625rem 2.5rem -0.875rem #000;
+            padding: auto auto;
+        }
+        span{
+            margin:0 0.3125rem 0 0.9375rem;
+        }
+    }
+
+    /*Estilos info contacto*/
+    .sectionContacto{
+        margin: 2rem;
+        grid-area: sectionContacto;
+        display: flex;
+        border-radius: 1.25rem;
+        background-color: $bg-amarillo;
+        border: 5px solid $bg-naranja;
+        .colContacto{
+            width: 50%;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            border-top-right-radius: 1.25rem;
+            border-bottom-right-radius: 1.25rem;
+            .contactoDiv1{
+                width: 100%;
+                display: flex;
+                align-content: center;
+                p{
+                    text-align: justify;
+                    font-weight: bold;
+                    font-size: 80%;
+                }
+                img{
+                    object-fit: contain;
+                }
+            }
+            iframe{
+                box-shadow:0.625rem 0.625rem 2.5rem -0.875rem #000;
+            }
+        }
+    }
+}
+
+/*ESTILOS LOGIN*/
+.gridLogin{
+    display: grid;
+    grid-template-areas: "header header"     
+                         "form2 form3"
+                         "footer footer";
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 50% 50%;
+
+    /*Estilos formulario registro*/
+    .form2{
+        border-top-left-radius: 1.25rem;
+        border-bottom-left-radius: 1.25rem;
+        height: 87%;
+        margin: 2rem 0 2rem 16rem;
+        grid-area: form2;
+        @extend %propiedades-formularios;
+        &::after{
+            content: ">";
+            position: absolute;
+            width: 3.125rem;
+            height: 3.125rem;
+            top: 50%;
+            right: -1.5625rem;
+            padding:0.5rem;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            background: whitesmoke;
+            border-radius: 50%;  
+            transform: translateY(-50%);
+            box-shadow: -1px 1px 3px 1px rgba(0, 0, 0, .2);
+            color:black;     
+        }
+    }
+
+    /*Estilos formulario login*/
+    .form3{
+        margin: 2rem 16rem 2rem 0;
+        grid-area: form3;
+        background-color: $bg-amarillo;
+        padding: 1.2875rem 1.6rem;
+        border-top-right-radius: 1.25rem;
+        border-bottom-right-radius: 1.25rem;
+        height: 87%;
+        border: 0.3125rem solid $bg-naranja;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        h2{
+            font-weight: bold;
+            font-size: 130%;
+            margin:0.625rem 1 0;
+            padding-bottom:0.625rem;
+            width:100%;
+            color:whitesmoke;
+            border-bottom:0.1875rem solid #78788c;
+        }
+        .login-items{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 25%;
+            gap: 1.25rem;
+            button{
+                width: 90%;
+                margin: 0.9375rem 0rem;
+                padding: 0.625rem;
+                box-shadow: 0 0 0.1875rem 0 rgba(0, 0, 0, .2);
+                cursor: pointer;
+                position: relative;
+                i{
+                    position: absolute;
+                    top: 0.75rem; 
+                    left: 0.75rem; 
+                }
+            }
+            .fb{
+                background: #3b5999;
+                border-style: none;
+                color: #fff;
+            }
+            .tw{
+                background: #55acef;
+                border-style: none;
+                color: #fff;
+            }
+            .correo{
+                background: black;
+                border-style: none;
+                color: #fff;
+            }
+        }
+    }
+}

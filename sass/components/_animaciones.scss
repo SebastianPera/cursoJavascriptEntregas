@@ -1,0 +1,18 @@
+/*ANIMACIONES*/
+/*Animación carrousel */
+.section1{
+    @include animacion(animacionfondo, initial, ease ease-in-out, 2s);
+    @keyframes animacionfondo{
+        0%{opacity: 0;}
+        100%{transform: 1;}
+    }
+}
+
+/*Animación logo giratorio*/
+.logoCard{
+    @include animacion(rotacion, infinite, ease, 3s);
+    @keyframes rotacion {
+        from{transform: rotateY(0deg);}
+        to{transform: rotateY(360deg);}
+    }
+}
